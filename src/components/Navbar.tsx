@@ -6,7 +6,7 @@ export const Navbar = () => {
       <div className="nav-container">
         <a href="#" className="logo">
           <div className="logo-icon">&lt;/&gt;</div>
-          <span>Full<span className="text-highlight">Stack</span></span>
+          <span>Muhammed Yusuf<span className="text-highlight"> Aydın</span></span>
         </a>
         
         <div className="nav-links">
