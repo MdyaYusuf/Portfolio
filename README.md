@@ -5,7 +5,7 @@ Built with **React, TypeScript, and pure CSS**, focusing on clean code, componen
 
 ## 🌐 Overview
 
-This portfolio serves as a digital business card and a showcase of my work in the **.NET ecosystem and React**.
+This portfolio serves as a digital business card and a showcase of my work.
 The design features:
 
 - **Glassmorphism & Neon Effects** for a modern, tech-forward look.
@@ -17,7 +17,7 @@ All styling is handled via **standard CSS variables** and scoped component style
 ## ✨ Features
 
 - ⚛️ **React 18 & TypeScript** for type-safe, robust frontend logic.
-- 🎨 **Pure CSS Styling** using native CSS variables (`:root`) for theming—no Tailwind or Bootstrap.
+- 🎨 **Pure CSS Styling** using native CSS variables (`:root`) for theming.
 - 📱 **Fully Responsive** grid and flexbox layouts.
 - ⌨️ **Typewriter Animation** and subtle hover effects for an engaging UX.
 - 🖼️ **Dynamic Project Cards** showcasing key works like *Altyapi.net* and *Antrenoryum*.
@@ -39,6 +39,7 @@ Portfolio/
 │   ├── components/      # Reusable UI components
 │   │   ├── Navbar.tsx   # Glassmorphism navigation
 │   │   ├── Hero.tsx     # Introduction & Tech Stack
+│   │   ├── About.tsx    # Professional bio & tech stack grid
 │   │   ├── Projects.tsx # Dynamic project grid with hover effects
 │   │   └── Contact.tsx  # Footer & Social links
 │   ├── App.tsx          # Main application layout
