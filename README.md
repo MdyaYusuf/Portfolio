@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# Full-Stack Developer Portfolio 🚀👨‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance portfolio website architected to showcase full-stack engineering skills and real-world solutions.
+Built with **React, TypeScript, and pure CSS**, focusing on clean code, component modularity, and a "Neon Dark" aesthetic without relying on heavy UI frameworks.
 
-Currently, two official plugins are available:
+## 🌐 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio serves as a digital business card and a showcase of my work in the **.NET ecosystem and React**.
+The design features:
 
-## React Compiler
+- **Glassmorphism & Neon Effects** for a modern, tech-forward look.
+- **Responsive Layouts** that adapt seamlessly from mobile to desktop.
+- **Component-Based Architecture** ensuring maintainability and scalability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+All styling is handled via **standard CSS variables** and scoped component styles, ensuring total control over the visual presentation.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ **React 18 & TypeScript** for type-safe, robust frontend logic.
+- 🎨 **Pure CSS Styling** using native CSS variables (`:root`) for theming—no Tailwind or Bootstrap.
+- 📱 **Fully Responsive** grid and flexbox layouts.
+- ⌨️ **Typewriter Animation** and subtle hover effects for an engaging UX.
+- 🖼️ **Dynamic Project Cards** showcasing key works like *Altyapi.net* and *Antrenoryum*.
+- 🔧 **Vite** for lightning-fast development and optimized production builds.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Core:** React 18, TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS3 (CSS Variables, Flexbox, Grid)
+- **Icons:** Material UI Icons
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+Portfolio/
+├── src/
+│   ├── assets/          # Static assets (profile images, project screenshots)
+│   ├── components/      # Reusable UI components
+│   │   ├── Navbar.tsx   # Glassmorphism navigation
+│   │   ├── Hero.tsx     # Introduction & Tech Stack
+│   │   ├── Projects.tsx # Dynamic project grid with hover effects
+│   │   └── Contact.tsx  # Footer & Social links
+│   ├── App.tsx          # Main application layout
+│   └── index.css        # Global styles, reset, and theme variables
+├── public/              # Public static files
+└── index.html           # Entry point
