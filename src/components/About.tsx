@@ -29,7 +29,7 @@ export const About = () => {
             </p>
 
             <p>
-              I am experienced in the full software lifecycle—from engineering secure financial ecosystems 
+              I am experienced in the full software lifecycle from engineering secure financial ecosystems 
               (3D Secure) and orchestrating deployments in Linux environments to conducting cross-platform testing. 
               Furthermore, I apply SEO strategies to drive product visibility and maintain professional English 
               proficiency for effective global collaboration.

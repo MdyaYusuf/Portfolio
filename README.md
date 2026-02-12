@@ -35,14 +35,31 @@ All styling is handled via **standard CSS variables** and scoped component style
 ```text
 Portfolio/
 ├── src/
-│   ├── assets/          # Static assets (profile images, project screenshots)
-│   ├── components/      # Reusable UI components
-│   │   ├── Navbar.tsx   # Glassmorphism navigation
-│   │   ├── Hero.tsx     # Introduction & Tech Stack
-│   │   ├── About.tsx    # Professional bio & tech stack grid
-│   │   ├── Projects.tsx # Dynamic project grid with hover effects
-│   │   └── Contact.tsx  # Footer & Social links
-│   ├── App.tsx          # Main application layout
-│   └── index.css        # Global styles, reset, and theme variables
-├── public/              # Public static files
-└── index.html           # Entry point
+│   ├── assets/                 # Static assets (images, icons, screenshots)
+│   ├── components/             # Reusable UI sections/components
+│   │   ├── Navbar.tsx          # Navigation (desktop/mobile)
+│   │   ├── Navbar.css
+│   │   ├── Hero.tsx            # Landing section (headline + tech badges)
+│   │   ├── Hero.css
+│   │   ├── About.tsx           # About section (bio + skills/stack)
+│   │   ├── About.css
+│   │   ├── Journey.tsx         # Experience/Education timeline (career journey)
+│   │   ├── Journey.css
+│   │   ├── Projects.tsx        # Projects grid/cards
+│   │   ├── Projects.css
+│   │   ├── Contact.tsx         # Contact + social links/footer
+│   │   ├── Contact.css
+│   ├── App.tsx                 # Page composition (section order)
+│   ├── App.css                 # App-level styling (layout/spacings)
+│   ├── main.tsx                # React entry (mounts App)
+│   └── index.css               # Global styles, resets, theme variables
+├── public/                     # Public static files
+├── index.html                  # Vite HTML entry
+├── package.json                # Dependencies & scripts
+├── package-lock.json           # Lockfile
+├── eslint.config.js            # ESLint configuration
+├── tsconfig.json               # Base TS config
+├── tsconfig.app.json           # App TS config
+├── tsconfig.node.json          # Node/Vite TS config
+├── vite.config.ts              # Vite configuration
+└── README.md                   # Project documentation

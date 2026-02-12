@@ -60,8 +60,38 @@
   color: var(--primary);
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .menu-icon {
+    display: block;
   }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0a0a0a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    display: none; 
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
